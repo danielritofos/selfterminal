@@ -528,7 +528,7 @@
                 </div> -->
             </div>
             <footer class="footer text-center text-muted">
-                All Rights Reserved by Stan's CT. Designed and Developed by <a
+                All Rights Reserved by Stan's CT. Designed and Developed by <a class="text-danger" 
                     href="https://danielsolution.com">Daniel Solution</a>.
             </footer>
         </div>
@@ -543,12 +543,10 @@
     <!--Custom JavaScript -->
     <script src="dist/js/custom.min.js"></script>
     <!--This page JavaScript -->
-    <script src="assets/extra-libs/c3/d3.min.js"></script>
-    <script src="assets/extra-libs/c3/c3.min.js"></script>
+    <script src="assets/extra-libs/c3/d3.js"></script>
+    <script src="assets/extra-libs/c3/c3.js"></script>
     <script src="assets/libs/chartist/dist/chartist.min.js"></script>
     <script src="assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
-    <script src="assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
-    <script src="assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
 
     <script>
         $(function () {
@@ -677,6 +675,11 @@
 
         })
     </script>
+    <style>
+    	.c3-tooltip-container{
+    		color: black;
+    	}
+    </style>
 </body>
 
 </html>
