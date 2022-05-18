@@ -4,11 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
     <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
     <!-- Custom CSS -->
@@ -20,9 +18,9 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -32,7 +30,7 @@
             <div class="lds-pos"></div>
         </div>
     </div>
-    <div id="main-wrapper" data-header-position="fixed" data-boxed-layout="full" class="bg-dark text-light" style="background-color: #0C091D !important;">
+    <div id="main-wrapper" data-header-position="fixed" data-boxed-layout="full" class="bg-dark text-light">
         <header class="topbar">
             <nav class="navbar top-navbar navbar-expand">
                     <div class="navbar-brand ml-5">
@@ -82,7 +80,7 @@
                                             <!-- Message -->
                                             <a href="javascript:void(0)"
                                                 class="message-item d-flex align-items-center border-bottom px-3 py-2">
-                                                <span class="btn btn-light rounded-circle btn-circle"><i
+                                                <span class="btn btn-warning rounded-circle btn-circle"><i
                                                         data-feather="settings" class="text-white"></i></span>
                                                 <div class="w-75 d-inline-block v-middle pl-2">
                                                     <h6 class="message-title mb-0 mt-1">Settings</h6>
@@ -165,7 +163,7 @@
                     </ul>
             </nav>
         </header>
-        <div class="page-wrapper bg-dark" style="background-color: #0C091D !important;">
+        <div class="page-wrapper bg-dark">
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 align-self-center">
@@ -191,7 +189,7 @@
             </div>
             <div class="container-fluid">
                 <div class="card-group">
-                    <div class="card bg-dark" style="background-color: #0C091D !important;">
+                    <div class="card bg-dark">
                         <div class="card-body">
                             <div class="d-flex d-lg-flex d-md-block align-items-center">
                                 <div>
@@ -205,7 +203,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-dark" style="background-color: #0C091D !important;">
+                    <div class="card bg-dark">
                         <div class="card-body">
                             <div class="d-flex d-lg-flex d-md-block align-items-center">
                                 <div>
@@ -223,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-dark" style="background-color: #0C091D !important;">
+                    <div class="card bg-dark">
                         <div class="card-body">
                             <div class="d-flex d-lg-flex d-md-block align-items-center">
                                 <div>
@@ -236,7 +234,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-dark" style="background-color: #0C091D !important;">
+                    <div class="card bg-dark">
                         <div class="card-body">
                             <div class="d-flex d-lg-flex d-md-block align-items-center">
                                 <div>
@@ -253,7 +251,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-12">
-                        <div class="card bg-dark" style="background-color: #0C091D !important;">
+                        <div class="card bg-dark">
                             <div class="card-body">
                                 <h4 class="card-title text-light">Общий баланс: $421 123.43</h4>
                                 <div id="campaign-v2" class="mt-2" style="height:283px; width:100%;"></div>
@@ -293,7 +291,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
-                        <div class="card bg-dark" style="background-color: #0C091D !important;">
+                        <div class="card bg-dark">
                             <div class="card-body">
                                 <h4 class="card-title text-light">Торговый баланс: $21 123.43</h4>
                                 <div id="campaign-v3" class="mt-2" style="height:283px; width:100%;"></div>
@@ -333,7 +331,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
-                        <div class="card bg-dark" style="background-color: #0C091D !important;">
+                        <div class="card bg-dark">
                             <div class="card-body">
                                 <h4 class="card-title text-light">Чистая прибыль: $1 123.43</h4>
                                 <div class="net-income mt-4 position-relative" style="height:414px;"></div>
@@ -638,7 +636,7 @@
             // income
             // ============================================================== 
             var data = {
-                labels: ['kucoin­ 14%', 'gate­ 32%', 'mexc 12%', 'lbank 45%', 'huobi 21%', 'okex 32%'],
+                labels: ['kuc 14%', 'gate­ 32%', 'mexc 12%', 'lbank 45%', 'huobi 21%', 'okex 32%'],
                 series: [
                     [534, 344, 123, 677, 53, 140],
                 ]
@@ -697,8 +695,14 @@
     	.ct-bar:nth-child(6){
     		stroke: #22ca80 !important;
     	}
-        .bd-dark{
+        .bg-dark{
             background-color: #0C091D !important;
+        }
+        .chartist-tooltip{
+            background-color: #0C091D !important;
+        }
+        .chartist-tooltip::before{
+            display: none;
         }
 
     </style>
