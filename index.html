@@ -625,8 +625,7 @@
                                                             <div class="lighter"></div>
                                                         </div>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="kucoin_menu">
-                                                            <a class="dropdown-item" href="#">Монеты</a>
-                                                            <a class="dropdown-item" href="#">Ордеры</a>
+                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal">Индивидуальные настройки</a>
                                                             <div class="dropdown-item">
                                                                 <div class="form-check">
                                                                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -674,8 +673,7 @@
                                                             <div class="lighter lighter_off"></div>
                                                         </div>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gate_menu">
-                                                            <a class="dropdown-item" href="#">Монеты</a>
-                                                            <a class="dropdown-item" href="#">Ордеры</a>
+                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal">Индивидуальные настройки</a>
                                                             <div class="dropdown-item">
                                                                 <div class="form-check">
                                                                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -725,8 +723,7 @@
                                                             <div class="lighter lighter_inprocess"></div>
                                                         </div>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="mexc_menu">
-                                                            <a class="dropdown-item" href="#">Монеты</a>
-                                                            <a class="dropdown-item" href="#">Ордеры</a>
+                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal">Индивидуальные настройки</a>
                                                             <div class="dropdown-item">
                                                                 <div class="form-check">
                                                                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -774,8 +771,7 @@
                                                             <div class="lighter "></div>
                                                         </div>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="lbank_menu">
-                                                            <a class="dropdown-item" href="#">Монеты</a>
-                                                            <a class="dropdown-item" href="#">Ордеры</a>
+                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal">Индивидуальные настройки</a>
                                                             <div class="dropdown-item">
                                                                 <div class="form-check">
                                                                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -823,8 +819,7 @@
                                                             <div class="lighter lighter_off"></div>
                                                         </div>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="huobi_menu">
-                                                            <a class="dropdown-item" href="#">Монеты</a>
-                                                            <a class="dropdown-item" href="#">Ордеры</a>
+                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal">Индивидуальные настройки</a>
                                                             <div class="dropdown-item">
                                                                 <div class="form-check">
                                                                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -872,8 +867,7 @@
                                                             <div class="lighter lighter_off"></div>
                                                         </div>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="okx_menu">
-                                                            <a class="dropdown-item" href="#">Монеты</a>
-                                                            <a class="dropdown-item" href="#">Ордеры</a>
+                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal">Индивидуальные настройки</a>
                                                             <div class="dropdown-item">
                                                                 <div class="form-check">
                                                                   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -1108,6 +1102,70 @@
                     href="https://danielsolution.com">Explicit Gold</a>.
             </footer>
         </div>
+    </div>
+
+
+    <div id="myModal" class="modal fade show" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none; padding-right: 14px;" aria-modal="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Настройки для Kucoin</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <h6>Деньги, на которые торгует бот</h6>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend w-50">
+                                <label class="input-group-text w-100" for="inputGroupSelect01">Торговый баланс, $</label>
+                            </div>
+                            <input class="form-control" type="number">
+                        </div>
+                        <h6>Cумма покупки монеты</h6>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend w-50">
+                                <label class="input-group-text w-100" for="inputGroupSelect01">Сумма позиции, $</label>
+                            </div>
+                            <input class="form-control" type="number">
+                        </div>
+                        <h6>Процент снижения цены, при котором монета продается дешевле</h6>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend w-50">
+                                <label class="input-group-text w-100" for="inputGroupSelect01">Стоп-лосс от цены, %</label>
+                            </div>
+                            <input class="form-control" type="number">
+                        </div>
+                        <h6>Процент повышения цены после продажи для покупки снова</h6>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend w-50">
+                                <label class="input-group-text w-100" for="inputGroupSelect01">Тейк-профит от цены, %</label>
+                            </div>
+                            <input class="form-control" type="number">
+                        </div>
+                        <h6>Время после листинга, в течение которого происх. торговля</h6>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend w-50">
+                                <label class="input-group-text w-100" for="inputGroupSelect01">Ребай, %</label>
+                            </div>
+                            <input class="form-control" type="number">
+                        </div>
+                        <h6>Деньги, на которые торгует бот</h6>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend w-50">
+                                <label class="input-group-text w-100" for="inputGroupSelect01">Финиш-тайм, сек</label>
+                            </div>
+                            <input class="form-control" type="number">
+                        </div>
+                    </form>
+                    <hr>
+                    <h6 class="text-danger">Изменять данные параметры можно лишь один раз в сутки. <br>Перед сохранением параметров перепроверьте введённые данные</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Закрыть окно</button>
+                    <button type="button" class="btn btn-danger">Сохранить настройки</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
     </div>
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
