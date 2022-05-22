@@ -577,7 +577,7 @@
                     <div class="col-12">
                         <div class="card bg-dark">
                             <div class="card-body">
-                                <div class="d-flex align-items-center mb-4">
+                                <!-- <div class="d-flex align-items-center mb-4">
                                     <div class="ml-auto">
                                         <div class="dropdown sub-dropdown">
                                             <button class="btn btn-link text-muted dropdown-toggle" type="button"
@@ -592,12 +592,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="table-responsive">
                                     <table class="table no-wrap v-middle mb-0">
                                         <thead>
                                             <tr class="border-0">
-                                                <th class="border-0 font-14 font-weight-medium text-muted">Биржи <br>6 <br><small>(список подключенных бирж)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted text-center">Биржи <br>6 <br><small>(список подключенных бирж)</small></th>
                                                 <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Статус <br><br><small>(в выбранный период)</small></th>
                                                 <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Общий баланс <br>$6533<br><small>(средний за период)</small></th>
                                                 <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Чистая прибыль <br>$43251<br><small>(за период)</small></th>
@@ -625,7 +625,6 @@
                                                             <div class="lighter"></div>
                                                         </div>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="kucoin_menu">
-                                                            <a class="dropdown-item" href="#">Листинги</a>
                                                             <a class="dropdown-item" href="#">Монеты</a>
                                                             <a class="dropdown-item" href="#">Ордеры</a>
                                                             <div class="dropdown-item">
@@ -675,7 +674,6 @@
                                                             <div class="lighter lighter_off"></div>
                                                         </div>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gate_menu">
-                                                            <a class="dropdown-item" href="#">Листинги</a>
                                                             <a class="dropdown-item" href="#">Монеты</a>
                                                             <a class="dropdown-item" href="#">Ордеры</a>
                                                             <div class="dropdown-item">
@@ -724,10 +722,9 @@
                                                     <div class="d-flex no-block align-items-center dropdown sub-dropdown">
                                                         <div class="mr-3 dropdown-toggle lighter-wrapper" type="button" id="mexc_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                             <img src="img/platforms/mexc.svg" alt="" width="100" height="45" />
-                                                            <div class="lighter lighter_off"></div>
+                                                            <div class="lighter lighter_inprocess"></div>
                                                         </div>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="mexc_menu">
-                                                            <a class="dropdown-item" href="#">Листинги</a>
                                                             <a class="dropdown-item" href="#">Монеты</a>
                                                             <a class="dropdown-item" href="#">Ордеры</a>
                                                             <div class="dropdown-item">
@@ -777,7 +774,6 @@
                                                             <div class="lighter "></div>
                                                         </div>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="lbank_menu">
-                                                            <a class="dropdown-item" href="#">Листинги</a>
                                                             <a class="dropdown-item" href="#">Монеты</a>
                                                             <a class="dropdown-item" href="#">Ордеры</a>
                                                             <div class="dropdown-item">
@@ -827,7 +823,6 @@
                                                             <div class="lighter lighter_off"></div>
                                                         </div>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="huobi_menu">
-                                                            <a class="dropdown-item" href="#">Листинги</a>
                                                             <a class="dropdown-item" href="#">Монеты</a>
                                                             <a class="dropdown-item" href="#">Ордеры</a>
                                                             <div class="dropdown-item">
@@ -877,7 +872,6 @@
                                                             <div class="lighter lighter_off"></div>
                                                         </div>
                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="okx_menu">
-                                                            <a class="dropdown-item" href="#">Листинги</a>
                                                             <a class="dropdown-item" href="#">Монеты</a>
                                                             <a class="dropdown-item" href="#">Ордеры</a>
                                                             <div class="dropdown-item">
@@ -1311,6 +1305,10 @@
             animation: 3s lighter_anim infinite ease;
             background-color: rgba(226, 0, 198, 0.7);
         }
+        .lighter.lighter_inprocess{
+            animation: 1s lighter_anim infinite ease;
+            background-color: rgba(233, 77, 16, 1);
+        }        
         @keyframes lighter_anim {
             0% {opacity: 1}
             50% {opacity: 0}
