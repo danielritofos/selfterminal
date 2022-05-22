@@ -579,39 +579,37 @@
                             <div class="card-body">
                                 <ul class="nav nav-tabs mb-3">
                                     <li class="nav-item">
-                                        <a href="#platforms" data-toggle="tab" aria-expanded="false" class="nav-link  text-danger active">
-                                            <i class="mdi mdi-home-variant d-lg-none d-block mr-1"></i>
-                                            <span class="d-none d-lg-block">Биржи</span>
+                                        <a href="#platforms" data-toggle="tab" aria-expanded="false" class="nav-link text-danger active">
+                                            <span>Биржи</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#coins" data-toggle="tab" aria-expanded="true" class="nav-link text-danger ">
-                                            <i class="mdi mdi-account-circle d-lg-none d-block mr-1"></i>
-                                            <span class="d-none d-lg-block">Монеты</span>
+                                        <a href="#coins" data-toggle="tab" aria-expanded="false" class="nav-link text-danger ">
+                                            <span>Монеты</span>
                                         </a>
                                     </li>
                                 </ul>
-                                <div class="table-responsive tab-content" style="max-height: 80vh;">
+                                <div class="table-responsive tab-content">
                                     <table class="table no-wrap v-middle mb-0 tab-pane active" id="platforms">
                                         <thead>
                                             <tr class="border-0">
-                                                <th class="border-0 font-14 font-weight-medium text-muted text-center">Биржи <br>6 <br><small>(список подключенных бирж)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Статус <br><br><small>(в выбранный период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Общий баланс <br>$6533<br><small>(средний за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Чистая прибыль <br>$43251<br><small>(за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Торговый баланс <br>$1211<br><small>(средний за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Сумма позиции <br><br><small>(средняя за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Стоп-лосс <br><br><small>(средний за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Тейк-профит <br><br><small>(средний за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Ре-бай <br><br><small>(средний за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Финиш-тайм <br><br><small>(средний за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Проведено листингов <br>312<br><small>(всего за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Отработано листингов <br>878<br><small>(всего за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Ордеров <br>1100<br><small>(всего за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Стоп-лоссов <br>897/84%<br><small>(всего за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Тейк-профитов <br>123/16%<br><small>(всего за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Комиссии тейк-профит <br>$123<br><small>(всего за период)</small></th>
-                                                <th class="border-0 font-14 font-weight-medium text-muted px-2 text-center">Торговые комиссии <br>$1244<br><small>(всего за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted">Биржи (6) <br><small>(список подключенных бирж)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Статус <br><small>(в выбранный период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Общий баланс ($6533)<br><small>(средний за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Чистая прибыль ($43251)<br><small>(за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Торговый баланс ($1211)<br><small>(средний за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Сумма позиции <br><small>(средняя за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Стоп-лосс<br><small>(средний за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Тейк-профит<br><small>(средний за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Ре-бай<br><small>(средний за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Финиш-тайм<br><small>(средний за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Проведено листингов (312)<br><small>(всего за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Отработано листингов (878)<br><small>(всего за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Ордеров (1100)<br><small>(всего за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Стоп-лоссов (897/84%)<br><small>(всего за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Тейк-профитов (123/16%)<br><small>(всего за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Комиссии тейк-профит ($123)<br><small>(всего за период)</small></th>
+                                                <th class="border-0 font-14 font-weight-medium text-muted px-5 text-center">Торговые комиссии ($1244)<br><small>(всего за период)</small></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -646,22 +644,22 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center"><i class="fa fa-circle text-success font-12" data-toggle="tooltip" data-placement="top" title="In Testing"></i></td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">$3121</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center font-weight-medium">$321 (9%)</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">$2121</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">$2021</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">5%</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">7%</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">4%</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">60 сек</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">5</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">4</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">10</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">8 (80%)</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">1 (10%)</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">$123</td>
-                                                <td class="border-top-0 text-muted px-2 py-4 font-14 text-center">$423</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center"><i class="fa fa-circle text-success font-12" data-toggle="tooltip" data-placement="top" title="In Testing"></i></td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">$3121</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center font-weight-medium">$321 (9%)</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">$2121</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">$2021</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">5%</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">7%</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">4%</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">60 сек</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">5</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">4</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">10</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">8 (80%)</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">1 (10%)</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">$123</td>
+                                                <td class="border-top-0 text-muted px-5 py-4 font-14 text-center">$423</td>
                                             </tr>
                                             <tr>
                                                 <td class="px-2 py-4">
