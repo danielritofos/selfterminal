@@ -1114,52 +1114,52 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <h6>Деньги, на которые торгует бот</h6>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend w-35">
-                                <label class="input-group-text w-100 font-12" for="inputGroupSelect01">Торговый баланс, $</label>
+                        <div class="form-group">
+                            <div class="d-flex justify-content-between mb-1">
+                                <small class="form-text text-muted">Торговый баланс, $</small>
+                                <small class="badge badge-default badge-secondary form-text text-white float-right"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
                             </div>
-                            <input class="form-control" type="number">
+                            <input type="number" class="form-control" id="nametext" aria-describedby="name" placeholder="Торговый баланс" value="87">
                         </div>
-                        <h6>Cумма покупки монеты</h6>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend w-35">
-                                <label class="input-group-text w-100 font-12" for="inputGroupSelect01">Сумма позиции, $</label>
+                        <div class="form-group">
+                            <div class="d-flex justify-content-between mb-1">
+                                <small class="form-text text-muted">Сумма позиции, $</small>
+                                <small class="badge badge-default badge-secondary form-text text-white float-right"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
+                            </div>                            
+                            <input type="number" class="form-control" id="nametext" aria-describedby="name" placeholder="Торговый баланс" value="8">
+                        </div>
+                        <div class="form-group">
+                            <div class="d-flex justify-content-between mb-1">
+                                <small class="form-text text-muted">Стоп-лосс от цены, %</small>
+                                <small class="badge badge-default badge-secondary form-text text-white float-right"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
                             </div>
-                            <input class="form-control" type="number">
+                            <input type="number" class="form-control" id="nametext" aria-describedby="name" placeholder="Торговый баланс" value="74">
                         </div>
-                        <h6>Процент снижения цены до продажи дешевле цены покупки</h6>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend w-35">
-                                <label class="input-group-text w-100 font-12" for="inputGroupSelect01">Стоп-лосс от цены, %</label>
+                        <div class="form-group">
+                            <div class="d-flex justify-content-between mb-1">
+                                <small class="form-text text-muted">Тейк-профит от цены, %</small>
+                                <small class="badge badge-default badge-secondary form-text text-white float-right"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
                             </div>
-                            <input class="form-control" type="number">
+                            <input type="number" class="form-control" id="nametext" aria-describedby="name" placeholder="Торговый баланс" value="12">
                         </div>
-                        <h6>Процент повышения цены до продажи дешевле цены покупки</h6>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend w-35">
-                                <label class="input-group-text w-100 font-12" for="inputGroupSelect01">Тейк-профит от цены, %</label>
+                        <div class="form-group">
+                            <div class="d-flex justify-content-between mb-1">
+                                <small class="form-text text-muted">Ребай, %</small>
+                                <small class="badge badge-default badge-secondary form-text text-white float-right"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
                             </div>
-                            <input class="form-control" type="number">
+                            <input type="number" class="form-control" id="nametext" aria-describedby="name" placeholder="Торговый баланс" value="432">
                         </div>
-                        <h6>Процент повышения цены после продажи для покупки снова</h6>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend w-35">
-                                <label class="input-group-text w-100 font-12" for="inputGroupSelect01">Ребай, %</label>
+                        <div class="form-group">
+                            <div class="d-flex justify-content-between mb-1">
+                                <small class="form-text text-muted">Финиш-тайм, сек</small>
+                                <small class="badge badge-default badge-secondary form-text text-white float-right"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
                             </div>
-                            <input class="form-control" type="number">
+                            <input type="number" class="form-control" id="nametext" aria-describedby="name" placeholder="Торговый баланс" value="13">
                         </div>
-                        <h6>Время после листинга, в течение которого происх. торговля</h6>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend w-35">
-                                <label class="input-group-text w-100 font-12" for="inputGroupSelect01">Финиш-тайм, сек</label>
-                            </div>
-                            <input class="form-control" type="number">
-                        </div>
-                        <p class="text-danger">Изменять данные параметры можно лишь один раз в сутки. Перед сохранением перепроверяйте введённые параметры</p>
                     </form>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer justify-content-between">
+                    <small class="text-danger">Изменять параметры можно 1 раз в сутки</small>
                     <button type="button" class="btn btn-danger">Сохранить настройки</button>
                 </div>
             </div><!-- /.modal-content -->
