@@ -1116,52 +1116,50 @@
                     <form>
                         <h6>Деньги, на которые торгует бот</h6>
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend w-50">
-                                <label class="input-group-text w-100" for="inputGroupSelect01">Торговый баланс, $</label>
+                            <div class="input-group-prepend w-35">
+                                <label class="input-group-text w-100 font-12" for="inputGroupSelect01">Торговый баланс, $</label>
                             </div>
                             <input class="form-control" type="number">
                         </div>
                         <h6>Cумма покупки монеты</h6>
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend w-50">
-                                <label class="input-group-text w-100" for="inputGroupSelect01">Сумма позиции, $</label>
+                            <div class="input-group-prepend w-35">
+                                <label class="input-group-text w-100 font-12" for="inputGroupSelect01">Сумма позиции, $</label>
                             </div>
                             <input class="form-control" type="number">
                         </div>
-                        <h6>Процент снижения цены, при котором монета продается дешевле</h6>
+                        <h6>Процент снижения цены до продажи дешевле цены покупки</h6>
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend w-50">
-                                <label class="input-group-text w-100" for="inputGroupSelect01">Стоп-лосс от цены, %</label>
+                            <div class="input-group-prepend w-35">
+                                <label class="input-group-text w-100 font-12" for="inputGroupSelect01">Стоп-лосс от цены, %</label>
+                            </div>
+                            <input class="form-control" type="number">
+                        </div>
+                        <h6>Процент повышения цены до продажи дешевле цены покупки</h6>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend w-35">
+                                <label class="input-group-text w-100 font-12" for="inputGroupSelect01">Тейк-профит от цены, %</label>
                             </div>
                             <input class="form-control" type="number">
                         </div>
                         <h6>Процент повышения цены после продажи для покупки снова</h6>
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend w-50">
-                                <label class="input-group-text w-100" for="inputGroupSelect01">Тейк-профит от цены, %</label>
+                            <div class="input-group-prepend w-35">
+                                <label class="input-group-text w-100 font-12" for="inputGroupSelect01">Ребай, %</label>
                             </div>
                             <input class="form-control" type="number">
                         </div>
                         <h6>Время после листинга, в течение которого происх. торговля</h6>
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend w-50">
-                                <label class="input-group-text w-100" for="inputGroupSelect01">Ребай, %</label>
+                            <div class="input-group-prepend w-35">
+                                <label class="input-group-text w-100 font-12" for="inputGroupSelect01">Финиш-тайм, сек</label>
                             </div>
                             <input class="form-control" type="number">
                         </div>
-                        <h6>Деньги, на которые торгует бот</h6>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend w-50">
-                                <label class="input-group-text w-100" for="inputGroupSelect01">Финиш-тайм, сек</label>
-                            </div>
-                            <input class="form-control" type="number">
-                        </div>
+                        <p class="text-danger">Изменять данные параметры можно лишь один раз в сутки. Перед сохранением перепроверяйте введённые параметры</p>
                     </form>
-                    <hr>
-                    <h6 class="text-danger">Изменять данные параметры можно лишь один раз в сутки. <br>Перед сохранением параметров перепроверьте введённые данные</h6>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal">Закрыть окно</button>
                     <button type="button" class="btn btn-danger">Сохранить настройки</button>
                 </div>
             </div><!-- /.modal-content -->
