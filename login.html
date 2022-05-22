@@ -19,35 +19,75 @@
 <![endif]-->
 </head>
 
-<body>
-    <div class="main-wrapper" style="background-color: #0C091D">
-        <div class="auth-wrapper d-flex flex-column no-block justify-content-center align-items-center" style="background: url(img/login.png) no-repeat center center; background-size: cover;">
-            <img src="img/logo.svg" alt="Stan's Crypto Terminal">
-            <div class="col-12 col-lg-6 text-light p-2 mt-5">
-                <h2 class="mt-3 text-center">Вход</h2>
-                <p class="text-center text-muted">Введите адрес электронной почты и пароль <br>для входа в личный кабинет</p>
-                <form class="mt-4">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="form-group col-12 col-md-6 offset-0 offset-md-3">
-                                <label class="text-muted" for="uname">Адрес электронной почты</label>
-                                <input class="form-control" type="text" placeholder="Введите свой e-mail">
+<body style="background-color: #0C091D; height: 100vh">
+    <div class="d-flex flex-column justify-content-center align-items-center" style="background: url(img/login.png) no-repeat center center; background-size: cover; position: absolute: top: 0; left: 0; width: 100%; height: 100%;">
+        <img src="img/logo.svg" alt="Stan's Crypto Terminal">
+        <div class="col-12 col-lg-4 text-light p-2 mt-5">
+            <ul class="nav nav-tabs mb-3">
+                <li class="nav-item col-6 p-0">
+                    <a href="#login" data-toggle="tab" aria-expanded="false" class="nav-link text-danger text-center font-weight-bold active">
+                        <i class="mdi mdi-home-variant d-lg-none d-block mr-1"></i>
+                        <span class="d-none d-lg-block">Вход</span>
+                    </a>
+                </li>
+                <li class="nav-item col-6 p-0">
+                    <a href="#register" data-toggle="tab" aria-expanded="true" class="nav-link text-danger text-center font-weight-bold">
+                        <i class="mdi mdi-account-circle d-lg-none d-block mr-1"></i>
+                        <span class="d-none d-lg-block">Регистрация</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="login">
+                    <p class="text-center text-muted">Введите e-mail и пароль для входа</p>
+                    <form class="mt-4 mb-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="text-muted" for="uname">Адрес электронной почты</label>
+                                    <input class="form-control" type="email" placeholder="Введите свой e-mail">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="text-muted" for="pwd">Пароль</label>
+                                    <input class="form-control" type="password" placeholder="Введите свой пароль">
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-danger px-5 py-2">Войти</button>
+                            </div>
+                            <div class="col-12 text-center mt-5">
+                                Есть проблемы со входом? <a href="#recovery" class="text-danger" data-toggle="tab">Восстановить пароль</a>
                             </div>
                         </div>
-                        <div class="col-lg-12">
-                            <div class="form-group col-12 col-md-6 offset-0 offset-md-3">
-                                <label class="text-muted" for="pwd">Пароль</label>
-                                <input class="form-control" type="password" placeholder="Введите свой пароль">
+                    </form>
+                </div>
+                <div class="tab-pane" id="register">
+                    <p class="text-center text-muted">Введите e-mail и желаемый пароль для регистрации</p>
+                    <form class="mt-4 mb-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="text-muted" for="uname">Адрес электронной почты</label>
+                                    <input class="form-control" type="email" placeholder="Введите свой e-mail">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="text-muted" for="pwd">Пароль</label>
+                                    <input class="form-control" type="password" placeholder="Введите свой пароль">
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-danger px-5 py-2">Зарегистрироваться</button>
+                            </div>
+                            <div class="col-12 text-center mt-5">
+                                Есть проблемы со входом? <a href="#recovery" class="text-danger" data-toggle="tab">Восстановить пароль</a>
                             </div>
                         </div>
-                        <div class="col-lg-12 text-center">
-                            <button type="submit" class="btn btn-success px-5 py-2">Войти</button>
-                        </div>
-                        <div class="col-lg-12 text-center mt-5">
-                            Ещё нет аккаунта? <a href="register.html" class="text-danger">Зарегистрироваться</a>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
