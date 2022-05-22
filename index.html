@@ -1105,7 +1105,7 @@
     </div>
 
 
-    <div id="myModal" class="modal fade show" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none; padding-right: 14px;" aria-modal="true">
+    <div id="kucoin-modal" class="modal fade show" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none; padding-right: 14px;" aria-modal="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1119,42 +1119,42 @@
                                 <small class="form-text text-muted">Торговый баланс, $</small>
                                 <small class="badge badge-default badge-secondary form-text text-white float-right" data-toggle="tooltip" data-placement="bottom" title="Деньги, на которые торгует бот"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
                             </div>
-                            <input type="number" class="form-control" id="nametext" aria-describedby="name" placeholder="Торговый баланс" value="87">
+                            <input type="number" class="form-control" aria-describedby="name" value="87">
                         </div>
                         <div class="form-group">
                             <div class="d-flex justify-content-between mb-1">
                                 <small class="form-text text-muted">Сумма позиции, $</small>
                                 <small class="badge badge-default badge-secondary form-text text-white float-right" data-toggle="tooltip" data-placement="bottom" title="Сумма покупки монеты"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
                             </div>                            
-                            <input type="number" class="form-control" id="nametext" aria-describedby="name" placeholder="Торговый баланс" value="8">
+                            <input type="number" class="form-control" aria-describedby="name" value="8">
                         </div>
                         <div class="form-group">
                             <div class="d-flex justify-content-between mb-1">
                                 <small class="form-text text-muted">Стоп-лосс от цены, %</small>
-                                <small class="badge badge-default badge-secondary form-text text-white float-right" data-toggle="tooltip" data-placement="bottom" title="%, по которому высчитывается цена от цены покупки  для открытия лимитного ордера продажи ниже цены покупки. Пример: Если Shitcoin куплен по цене 20$ и параметр Б стоит 5% (20*5%=1$), то лимитный ордер продажи откроется на цену 19$ ( 20$-1$)"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
+                                <small class="badge badge-default badge-secondary form-text text-white float-right" data-toggle="tooltip" data-placement="bottom" title="Процент снижения цены для продажи ниже цены покупки"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
                             </div>
-                            <input type="number" class="form-control" id="nametext" aria-describedby="name" placeholder="Торговый баланс" value="74">
+                            <input type="number" class="form-control" aria-describedby="name" value="74">
                         </div>
                         <div class="form-group">
                             <div class="d-flex justify-content-between mb-1">
                                 <small class="form-text text-muted">Тейк-профит от цены, %</small>
-                                <small class="badge badge-default badge-secondary form-text text-white float-right" data-toggle="tooltip" data-placement="bottom" title="%, по которому высчитывается цена от цены покупки  для открытия лимитного ордера продажи выше цены покупки.  Пример: Если Shitcoin куплен по цене 20$ и параметр В стоит 5% (20*5%=1$), то лимитный ордер продажи откроется на цену 21$ ( 20$+1$)"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
+                                <small class="badge badge-default badge-secondary form-text text-white float-right" data-toggle="tooltip" data-placement="bottom" title="Процент повышения цены для продажи выше цены покупки"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
                             </div>
-                            <input type="number" class="form-control" id="nametext" aria-describedby="name" placeholder="Торговый баланс" value="12">
+                            <input type="number" class="form-control" aria-describedby="name" value="12">
                         </div>
                         <div class="form-group">
                             <div class="d-flex justify-content-between mb-1">
                                 <small class="form-text text-muted">Ребай, %</small>
-                                <small class="badge badge-default badge-secondary form-text text-white float-right" data-toggle="tooltip" data-placement="bottom" title="%, по которому высчитывается цена от цены продажи  для открытия лимитного ордера для покупки выше цены продажи. Пример: Если Shitcoin продан по цене 20$ и параметр Г стоит 5% (20*5%=1$), то лимитный ордер на покупку откроется на цену 21$ ( 20$+1$)"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
+                                <small class="badge badge-default badge-secondary form-text text-white float-right" data-toggle="tooltip" data-placement="bottom" title="Процент повышение цены после продажи для повторной покупки"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
                             </div>
-                            <input type="number" class="form-control" id="nametext" aria-describedby="name" placeholder="Торговый баланс" value="432">
+                            <input type="number" class="form-control" aria-describedby="name" value="432">
                         </div>
                         <div class="form-group">
                             <div class="d-flex justify-content-between mb-1">
                                 <small class="form-text text-muted">Финиш-тайм, сек</small>
-                                <small class="badge badge-default badge-secondary form-text text-white float-right" data-toggle="tooltip" data-placement="bottom" title="Время после листинга, которое позволяет боту открывать лимитные ордера. Граничный максимум 99 секунд после листинга. Пример: биржа Binance залистит Shitcoin 32 января 2222 года в 13:00 по МСК. На бирже Gate есть торговая пара Shitcoin/USDT. Она будет торговаться согласно заданным параметрам с момента получения информации о листинге на Binance и до 32 января 2222 года в 13:00:30 по МСК."><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
+                                <small class="badge badge-default badge-secondary form-text text-white float-right" data-toggle="tooltip" data-placement="bottom" title="Время после листинга, в течение которого происходит торговля"><i data-feather="info" class="svg-icon mr-1"></i>Подсказка</small>
                             </div>
-                            <input type="number" class="form-control" id="nametext" aria-describedby="name" placeholder="Торговый баланс" value="13">
+                            <input type="number" class="form-control" aria-describedby="name" value="13">
                         </div>
                     </form>
                 </div>
@@ -1165,6 +1165,7 @@
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div>
+
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
